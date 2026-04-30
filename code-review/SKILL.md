@@ -24,7 +24,7 @@ Before launching review agents, gather all context they will need:
 1. **Read all modified files in full** — not just the diff. Understand the surrounding code.
 2. **Find callers and dependencies** — use Grep/Glob to find callers of modified functions, related interfaces, and types.
 3. **Check the commit stack** — `git log --oneline -10` for recent context.
-4. **Read CLAUDE.md** for project-specific rules the change must follow.
+4. **Read AGENTS.md or CLAUDE.md** for project-specific rules the change must follow.
 
 ### Step 3: Launch 5 review agents in parallel
 
@@ -32,7 +32,7 @@ Each agent reviews from a specific perspective. Provide each agent with:
 - The full diff
 - The full content of modified files
 - Relevant caller/dependency excerpts
-- Project conventions from CLAUDE.md
+- Project conventions from AGENTS.md or CLAUDE.md
 
 #### Perspective 1: Correctness
 
@@ -66,7 +66,7 @@ Each agent reviews from a specific perspective. Provide each agent with:
 
 #### Perspective 5: Style & conventions
 
-- Does the code follow the project's CLAUDE.md rules?
+- Does the code follow the project's AGENTS.md or CLAUDE.md rules?
 - Are naming conventions followed? (CamelCase functions, lower_case variables, UPPER_CASE constants)
 - Are debug print statements added at major flow points?
 - Does this change need documentation updates? New tests?

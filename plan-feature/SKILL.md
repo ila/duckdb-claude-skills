@@ -20,7 +20,7 @@ Extract from the user's description:
 ### Step 2: Gather codebase context
 
 Before asking questions:
-1. Read CLAUDE.md for project conventions and constraints.
+1. Read AGENTS.md or CLAUDE.md for project conventions and constraints.
 2. Identify which source files and subsystems are affected.
 3. Search for existing patterns, utilities, or prior art that could be reused.
 4. Note any related tests, docs, or configuration that will need updates.

@@ -41,7 +41,7 @@ Same 5 perspectives as [code-review](../code-review/SKILL.md), but applied to th
 4. **Simplicity** — Dead code? Over-abstractions? Could anything be simplified?
 5. **Style** — Naming conventions? Debug prints? Documentation completeness?
 
-Provide each agent with the full source code of the subsystem plus relevant context from CLAUDE.md and neighboring subsystems.
+Provide each agent with the full source code of the subsystem plus relevant context from AGENTS.md or CLAUDE.md and neighboring subsystems.
 
 #### 2c: Collect findings
 

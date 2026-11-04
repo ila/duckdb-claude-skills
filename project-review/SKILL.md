@@ -75,6 +75,8 @@ For all CRITICAL and MAJOR findings, create TODO items describing:
 - The suggested fix
 - Priority (CRITICAL fixes first)
 
+When the audit leads to a PR, review its description using the [PR description review](../code-review/SKILL.md#pr-description-review) checklist. Summarize behavior and issue fixes, justify major source/test additions, and include separate added/deleted LOC for source, tests, docs, and build/pins/other against the PR base.
+
 ## Severity Definitions
 
 | Level | Meaning | Action |

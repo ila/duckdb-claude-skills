@@ -115,3 +115,15 @@ Do:
 - Demand evidence and justification
 - Provide concrete alternatives
 - Hold the code to the highest standard
+
+## PR description review
+
+When reviewing or preparing a PR, compare the whole PR with its base, not only the latest commit. Make the description understandable without reading the diff first:
+
+- State the concrete problem and the observable before/after behavior. For a dependency upgrade, name the relevant API, planner, or semantic changes and explain how the code was adapted.
+- Explain the main design choices and why substantial new code is needed. Name the query shapes or operations that now work, including which remain incremental, and distinguish fixes from unchanged limitations.
+- Link issues only when the PR actually fixes their reproductions; say what each fix changes. Identify dependencies and merge order when another PR supplies required code.
+- Report exact validation commands and outcomes, including skipped or failing cases and the commit tested. Do not present a classification count as a correctness check.
+- Include a diff-size table with **added and deleted LOC separately** for source files, tests and benchmark query corpus, docs, and build/pins/other. Derive it from `git diff --numstat <base>...<head>`; state how paths were grouped and account for every changed file. Explain the largest additions rather than treating net LOC as evidence of quality.
+
+Check every claim against the current diff and artifacts. Remove stale plans, obsolete links, and claims about code that was later deleted.
